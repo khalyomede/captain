@@ -61,8 +61,8 @@ final class Main {
 
   command.arguments = [
     {
-    name: "firstname",
-    description: "Your first name.",
+      name: "firstname",
+      description: "Your first name.",
     },
   ];
 
