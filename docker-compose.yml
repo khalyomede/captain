@@ -1,0 +1,17 @@
+version: "3"
+services:
+  haxe:
+    image: haxe:4.2-alpine
+    entrypoint: haxe
+    volumes:
+      - .:/home/alpine
+      - ./docker-data/haxe/haxelib:/haxelib
+    working_dir: /home/alpine
+
+  haxelib:
+    image: haxe:4.2-alpine
+    entrypoint: haxelib
+    volumes:
+      - .:/home/alpine
+      - ./docker-data/haxe/haxelib:/haxelib
+    working_dir: /home/alpine

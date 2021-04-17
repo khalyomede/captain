@@ -1,0 +1,102 @@
+# Contributing
+
+Thank you for considering contributing to this project. You will find a list of things you can put your hands on to make this project better.
+
+## Summary
+
+- [Getting started](#getting-started)
+- [Things you can help on](#things-you-can-help-on)
+- [Propose a change](#propose-a-change)
+
+### Getting started
+
+#### Find an issue
+
+Every contributions answer an issue. If you found something to improve, make sure there is an issue for this, or create a new one if you did not found one in the issues page.
+
+#### Fork this project
+
+Once you have selected your issue, you may fork this project (using the fork button in this Github project page). This will create a clone of this project in your own Github namespace.
+
+Next, clone the forked project from your namespace into your computer.
+
+#### Branch naming
+
+Finally, make sure you are working on a dedicated branch, name as followed:
+
+```txt
+<issue-id>-<hyphen-cased-issue-title>
+```
+
+For example, if you are resolving issue 12 with title "Remove unused imports", your branch will be named like this:
+
+```txt
+12-remove-unused-imports
+```
+
+#### Commit convention
+
+When you are about to commit a change, make sure you prefix the commit id before your message, and that you use either "add", "fix" or "break" keyword before your commit message.
+
+Let's imagine you have removed an unused import. Your commit message will look like this:
+
+```txt
+#12 fix remove unused import
+```
+
+This will help people find the original issue for a given commit.
+
+## Things you can help on
+
+- [English corrections](#english-corrections)
+- [Code fixes and features](#code-fixes-and-features)
+
+### English corrections
+
+If you spotted a mistake in one of the documentations (contribution guide, readme, ...), please feel free to make a fix for that! Just follow the [Getting started](#getting-started) section and perform your patch.
+
+### Code fixes and features
+
+If you want to contribute in the code base, make sure to follow the [Getting started](#getting-started) first.
+
+#### Patching the code
+
+If you have added a patch, make sure to run tests to make nothing will break:
+
+```bash
+haxe test.hxml
+```
+
+#### Adding a new feature
+
+If you have added a feature, please try to create a test in order to prevent regression next time we add other features of fixes. You can take inspiration from existing tests in `src/test/CommandTest.hx`. Then, don't forget to run tests again:
+
+```bash
+haxe test.hxml
+```
+
+#### Linting the code
+
+Once everything pass this step, you should also when possible lint your code so that it adheres as much as possible with the rest of the code base.
+
+Make sure your code editor supports `.editorconfig` so that indentation and other code configuration will be the same for everybody.
+
+Then, run the lint command to improve the code formatting:
+
+```bash
+haxelib run checkstyle --source src
+```
+
+Only fix the code you added.
+
+## Propose a change
+
+Once you have finished locally, you may propose a merge request. Head on your github forked project, and notice a banner that informs you can create a pull request from your forked project branch to this project master branch.
+
+Lastly, you may want to add a description with:
+
+- The things you fixed
+- The things you added
+- The things you added and that will break existing installation
+
+Thanks a lot!

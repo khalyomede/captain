@@ -1,0 +1,23 @@
+{
+    "classPath": "src",
+    "contributors": [
+        "khalyomede"
+    ],
+    "dependencies": {
+        "utest": "1.13.2",
+        "checkstyle": "2.7.0"
+    },
+    "description": "An opiniated command line parser that supports options and arguments.",
+    "license": "MIT",
+    "name": "captain",
+    "releasenote": "First working version.",
+    "tags": [
+        "command",
+        "line",
+        "parse",
+        "arguments",
+        "options"
+    ],
+    "url": "https://github.com/khalyomede/captain",
+    "version": "0.1.0"
+}

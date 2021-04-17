@@ -1,0 +1,4 @@
+--cwd src
+--interp
+--main test.Main
+--library utest
